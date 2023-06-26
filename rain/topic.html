@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/rain.css" type="text/css">
+    <title>暴雨背后的学问</title>
+    <style>
+    	body{
+			background: url(img/city_rain.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+    </style>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--<script type="text/javascript">
+    	$(function(){
+    		$("#dialogue").click(function(){
+    			i=num;
+    		})
+    		$(".title").click(function(){
+    			$(".dialogue").fadeOut(1000);
+    			$(".reporter").fadeOut(1000);
+    	    })
+    	})
+    </script>-->
+	<!--<img src="img/professor.jpg" />
+	<img src="img/dialogue2.jpg" />-->
+	<img src="img/title.png" class="title"/>
+	<img src="img/rain1.png" id="switch"/>
+	<div class="menu">
+		<a class="learn">
+			<img src="img/menu1.png" />
+		</a>
+		<span class="reason">产生原因</span>
+		<span class="guide">自救指南</span>
+		<span class="prevention">如何防治</span>
+	</div>
+	<script>
+	var j=1;
+    setInterval(function(){
+    	j++;
+    	if(j>2) j=1;
+    	document.getElementById('switch').src='img/rain'+j+'.png';
+    },200)
+	</script>
+</body>
+</html>
